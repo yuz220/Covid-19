@@ -1,7 +1,11 @@
-library(shiny)
-library(plotly)
-library(COVID19)
-library(shinyjs)
+if (!require('shiny')) install.packages('shiny'); library('shiny')
+if (!require('plotly')) install.packages('plotly'); library('plotly')
+if (!require('COVID19')) install.packages('COVID19'); library('COVID19')
+if (!require('ggplot2')) install.packages('ggplot2'); library('ggplot2')
+if (!require('thematic')) install.packages('thematic'); library('thematic')
+if (!require('ggstance')) install.packages('ggstance'); library('ggstance')
+if (!require('broom.mixed')) install.packages('broom.mixed'); library('broom.mixed')
+if (!require('shinyjs')) install.packages('shinyjs'); library('shinyjs')
 
 ui <- fluidPage(
     
